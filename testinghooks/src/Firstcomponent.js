@@ -9,7 +9,10 @@ export default(props)=>{
 
     // similar to component did update/mount
     useEffect(() => {
-        document.title=`The counter is currently ${count}`
+        let counterElem = document.querySelector("h1");
+        counterElem.textContent = `Current count: ${count}`;
+        
+        //document.title=`The counter is currently ${count}`
     });
     
     return(
