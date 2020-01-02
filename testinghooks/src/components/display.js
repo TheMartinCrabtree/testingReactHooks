@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default(props)=>{
+const Display=(props)=>{
     console.log("display rendered")
 
     // more logic here and assign state/variables
@@ -11,3 +11,5 @@ export default(props)=>{
     )
 
 }
+
+export default Display;
