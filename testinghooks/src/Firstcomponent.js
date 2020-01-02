@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import Tracker from './components/tracker';
 
 
 export default(props)=>{
@@ -17,10 +18,11 @@ export default(props)=>{
     
     return(
         <div>
-        <p>Current count is { count }</p>
-        <div>
-            <button onClick={()=>setCount(count+1)} >increase count</button>
-        </div>
+            <p>Current count is { count }</p>
+            <div>
+                <button onClick={()=>setCount(count+1)} >increase count</button>
+            </div>
+            <Tracker count={count} setCount={setCount} />
 
         </div>
         
