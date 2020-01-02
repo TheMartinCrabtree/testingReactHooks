@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 export default(props)=>{
-
+    // more logic here and assign state/variables
     return(
         <div>
-            This is the display component
+            <p>This is the display component</p>
         </div>
     )
 
