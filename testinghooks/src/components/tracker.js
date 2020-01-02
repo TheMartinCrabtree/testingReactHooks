@@ -1,6 +1,8 @@
 import React, { useState, useEffect  } from 'react';
 
 export default(props)=>{
+    console.log("tracker rendered")
+
     // more logic here and assign state/variables
     return(
         <section>
