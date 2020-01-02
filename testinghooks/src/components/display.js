@@ -7,6 +7,7 @@ const Display=(props)=>{
     return(
         <div>
             <p>This is the display component</p>
+            <p>Disp Var: {props.dispVar} </p>
         </div>
     )
 

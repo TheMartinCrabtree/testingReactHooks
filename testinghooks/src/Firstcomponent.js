@@ -6,6 +6,9 @@ import Display from './components/display';
 
 export default(props)=>{
     console.log("first component rendered");
+    // for testing purposes
+    let dispVar1 = 1;
+    const [dispVar2, setDispVar2] = useState(1);
 
 
     // initialize state with count set to 0, also get update function
@@ -20,16 +23,18 @@ export default(props)=>{
     });
 
     // testing useMemo to only render display if there is a change
-    const displaymemo = useMemo(() => {return <Display />}, [])
+    const displaymemo = useMemo(() => {return <Display dispVar={dispVar1} />}, [])
     
     return(
         <div>
             <p>Current count is { count }</p>
             <div>
                 <button onClick={()=>setCount(count+1)} >increase count</button>
+                <button onClick={()=>setDispVar2(dispVar2+1)} >increase disp var</button>
             </div>
             <Tracker count={count} setCount={setCount} />
             {displaymemo}
+            <Display dispVar = {dispVar2} />
 
         </div>
         
